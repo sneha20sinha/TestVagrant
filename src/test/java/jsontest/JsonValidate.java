@@ -18,7 +18,7 @@ public class JsonValidate {
 		FileReader reader = new FileReader(".\\jsonfiles\\TeamRCB.JSON"); // to read or load file.
 		Object obj = jsonparser.parse(reader); //parsing jsondata from the file.
 		
-		 //	
+		 //Converting JavaObject to JsonObject
 		JSONObject teamRCB = (JSONObject)obj;
 		
 		JSONArray array = (JSONArray) teamRCB.get("player");
